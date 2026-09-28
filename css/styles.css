@@ -675,4 +675,103 @@ h3 {
   min-height: 70vh;
 }
 
+/* =========================
+   CONSTRUCTION PAGE
+   ========================= */
+
+.construction-services {
+  background: var(--color-background);
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+}
+
+.service-card {
+  min-height: 280px;
+  padding: var(--space-lg);
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.service-card .card-number {
+  margin-bottom: var(--space-xl);
+
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.service-card h3 {
+  margin-top: auto;
+  font-size: 1.5rem;
+}
+
+.service-card p:last-child {
+  color: var(--color-text-muted);
+}
+
+
+/* =========================
+   PROJECT PORTFOLIO
+   ========================= */
+
+.project-portfolio {
+  background: var(--color-dark);
+  color: var(--color-text-light);
+}
+
+.project-portfolio .section-heading > p:last-child {
+  color: #cccccc;
+}
+
+.project-placeholder {
+  max-width: 800px;
+  padding: var(--space-xl);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
+
+  background: var(--color-dark-soft);
+}
+
+.project-placeholder h3 {
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+}
+
+.project-placeholder > p:last-child {
+  max-width: 650px;
+  margin-bottom: 0;
+
+  color: #cccccc;
+}
+
+
+/* =========================
+   CONSTRUCTION RESPONSIVE
+   ========================= */
+
+@media (max-width: 800px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: 230px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-placeholder {
+    padding: var(--space-lg);
+  }
+}
+
 
