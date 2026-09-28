@@ -1,0 +1,41 @@
+[
+  {
+    "id": "demo-property-001",
+    "title": "Demo Property 01",
+    "location": null,
+    "price": null,
+    "size": null,
+    "propertyType": "Demo property",
+    "description": "Temporary development record. Replace with authorized Latus property inventory.",
+    "documentation": null,
+    "images": [],
+    "featured": true,
+    "status": "demo"
+  },
+  {
+    "id": "demo-property-002",
+    "title": "Demo Property 02",
+    "location": null,
+    "price": null,
+    "size": null,
+    "propertyType": "Demo property",
+    "description": "Temporary development record. Replace with authorized Latus property inventory.",
+    "documentation": null,
+    "images": [],
+    "featured": true,
+    "status": "demo"
+  },
+  {
+    "id": "demo-property-003",
+    "title": "Demo Property 03",
+    "location": null,
+    "price": null,
+    "size": null,
+    "propertyType": "Demo property",
+    "description": "Temporary development record. Replace with authorized Latus property inventory.",
+    "documentation": null,
+    "images": [],
+    "featured": true,
+    "status": "demo"
+  }
+]

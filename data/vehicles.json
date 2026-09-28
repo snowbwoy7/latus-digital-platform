@@ -1,0 +1,50 @@
+[
+  {
+    "id": "demo-vehicle-001",
+    "make": "Demo",
+    "model": "Vehicle 01",
+    "year": null,
+    "price": null,
+    "mileage": null,
+    "condition": "Demo inventory",
+    "transmission": null,
+    "fuelType": null,
+    "colour": null,
+    "description": "Temporary development record. Replace with authorized Latus inventory.",
+    "images": [],
+    "featured": true,
+    "status": "demo"
+  },
+  {
+    "id": "demo-vehicle-002",
+    "make": "Demo",
+    "model": "Vehicle 02",
+    "year": null,
+    "price": null,
+    "mileage": null,
+    "condition": "Demo inventory",
+    "transmission": null,
+    "fuelType": null,
+    "colour": null,
+    "description": "Temporary development record. Replace with authorized Latus inventory.",
+    "images": [],
+    "featured": true,
+    "status": "demo"
+  },
+  {
+    "id": "demo-vehicle-003",
+    "make": "Demo",
+    "model": "Vehicle 03",
+    "year": null,
+    "price": null,
+    "mileage": null,
+    "condition": "Demo inventory",
+    "transmission": null,
+    "fuelType": null,
+    "colour": null,
+    "description": "Temporary development record. Replace with authorized Latus inventory.",
+    "images": [],
+    "featured": true,
+    "status": "demo"
+  }
+]
