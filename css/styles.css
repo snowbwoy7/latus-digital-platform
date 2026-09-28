@@ -552,3 +552,127 @@ h3 {
     min-height: 280px;
   }
 }
+/* =========================
+   INTERNAL PAGE HERO
+   ========================= */
+
+.page-hero {
+  background: var(--color-dark);
+  color: var(--color-text-light);
+}
+
+.page-hero h1 {
+  max-width: 850px;
+  margin-bottom: var(--space-md);
+}
+
+.page-description {
+  max-width: 650px;
+  color: #cccccc;
+  font-size: 1.1rem;
+}
+
+
+/* =========================
+   CATALOGUE
+   ========================= */
+
+.catalogue-section {
+  min-height: 60vh;
+}
+
+/* =========================
+   VEHICLE DETAILS
+   ========================= */
+
+.vehicle-detail-section {
+  min-height: 70vh;
+}
+
+.detail-layout {
+  margin-top: var(--space-lg);
+
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.detail-image {
+  min-height: 520px;
+}
+
+.detail-content h1 {
+  margin-bottom: var(--space-sm);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.detail-price {
+  margin-bottom: var(--space-lg);
+
+  color: var(--color-gold);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.detail-specifications {
+  margin-bottom: var(--space-xl);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.detail-specifications div {
+  padding-block: var(--space-md);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.detail-specifications span,
+.detail-specifications strong {
+  display: block;
+}
+
+.detail-specifications span {
+  margin-bottom: 0.25rem;
+
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.detail-description {
+  margin-bottom: var(--space-lg);
+}
+
+.detail-description h2 {
+  font-size: 1.5rem;
+}
+
+.detail-message {
+  padding-block: var(--space-xl);
+}
+
+@media (max-width: 800px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-image {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .detail-specifications {
+    grid-template-columns: 1fr;
+  }
+}
+
+.property-detail-section {
+  min-height: 70vh;
+}
+
+
