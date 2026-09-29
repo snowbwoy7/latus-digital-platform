@@ -64,10 +64,20 @@ function renderPropertyDetails(property) {
   const propertySize =
     property.size ?? "On request";
 
-  const propertyDocumentation =
-    property.documentation ?? "On request";
+    const propertyDocumentation =
+  property.documentation ?? "On request";
 
-  propertyDetail.innerHTML = `
+const whatsappNumber = "2348023655929";
+
+const enquiryMessage =
+  `Hello Latus, I'm interested in ${property.title}. ` +
+  `Reference: ${property.id}. I'd like more information about this property.`;
+
+const whatsappUrl =
+  `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(enquiryMessage)}`;
+
+propertyDetail.innerHTML = `
+
     <div class="detail-layout">
 
       <div class="detail-media">
@@ -130,9 +140,12 @@ function renderPropertyDetails(property) {
         </div>
 
 
-        <a href="#" class="button">
-          Enquire About This Property
-        </a>
+        <a
+  href="${whatsappUrl}"
+  class="button"
+  target="_blank"
+  rel="noopener noreferrer">
+  Enquire About This Property</a>
 
       </div>
 

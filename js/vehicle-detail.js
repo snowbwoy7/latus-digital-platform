@@ -70,11 +70,20 @@ function renderVehicleDetails(vehicle) {
   const vehicleFuelType =
     vehicle.fuelType ?? "On request";
 
-  const vehicleColour =
-    vehicle.colour ?? "On request";
+    const vehicleColour =
+  vehicle.colour ?? "On request";
 
-  vehicleDetail.innerHTML = `
-    <div class="detail-layout">
+const whatsappNumber = "2348023655929";
+
+const enquiryMessage =
+  `Hello Latus, I'm interested in ${vehicleName}. ` +
+  `Reference: ${vehicle.id}. I'd like more information about this vehicle.`;
+
+const whatsappUrl =
+  `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(enquiryMessage)}`;
+
+vehicleDetail.innerHTML = `
+  <div class="detail-layout">
 
       <div class="detail-media">
         <div class="image-placeholder detail-image">
@@ -130,17 +139,19 @@ function renderVehicleDetails(vehicle) {
             <span>Colour</span>
             <strong>${vehicleColour}</strong>
           </div>
-
-        </div>
+          
+          </div>
 
         <div class="detail-description">
           <h2>Vehicle Information</h2>
           <p>${vehicle.description}</p>
         </div>
 
-        <a href="#" class="button">
-          Enquire About This Vehicle
-        </a>
+        <a href="${whatsappUrl}"
+        class="button"
+        target="_blank"
+        rel="noopener noreferrer">
+        Enquire About This Vehicle</a>
 
       </div>
 
@@ -150,3 +161,4 @@ function renderVehicleDetails(vehicle) {
 
 
 loadVehicleDetails();
+

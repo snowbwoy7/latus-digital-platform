@@ -55,10 +55,8 @@ async function loadPropertyCatalogue() {
             ${propertyPrice}
           </p>
 
-          <a href="./property.html?id=${property.id}">
-            View Details →
-          </a>
-
+        <a href="./property.html?id=${property.id}">
+  View Details →</a>
         </div>
       `;
 
